@@ -34,12 +34,12 @@ inquirer
         },
         {
             type: 'input',
-            message: 'What are the installation instructions?',
+            message: 'What installation instructions are there?',
             name: 'installation'
         },
         {
             type: 'input',
-            message: 'What kind of usage information did you use?',
+            message: 'What usage information are there?',
             name: 'usage'
         },
         {
@@ -69,9 +69,9 @@ inquirer
             name: "license"
         },
         {
-            type: 'correct',
-            message: 'Is everything you enter correct?',
-            name: 'correct',
+            type: 'question',
+            message: 'What kind of question you have?',
+            name: 'question',
         },
     ])
     .then((data) => {

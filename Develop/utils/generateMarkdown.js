@@ -11,6 +11,16 @@ function renderLicenseLink(license) { }
 function renderLicenseSection(license) { }
 
 // TODO: Create a function to generate markdown for README
+function buildHeader(text) {
+  return `
+  ## ${text}`
+}
+
+function renderTableOfContentsItem(title) {
+  return `
+* [${title}](#${title.toLowerCase()})`
+}
+
 function generateMarkdown(data) {
 
 
@@ -48,7 +58,9 @@ ${data.test}
 ${data.email}
 
 ## License 
-${licenseSection}
+This license is under the ${licenseSection}
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at ylchaos123@gmail.com. You can find more of my work at [chaoly123](https://github.com/chaoly123/).
 `;
 }
 
